@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="entete" class= "element">
+<h1>Mortal Kombat</h1>
+
+    
+<form id="formulaire" >
+        <button id="sub" type="submit" >START</button>
+        <label for="name">Selectionnez votre nom : </label>
+        <input type="text" name="name" id="name" placeholder="name" required>
+        
+
+         
+    </form>
+</div>
+
+    <div id="ring" class= "element">
+        <div id="lesbarres">
+
+            <div id="lesbarresG" >
+                <div class="niv_arriere">
+                <input  id="niveauG1" type="texte" value="">
+                </div>
+                <input id="niveauG2" type="texte"  value="">
+            </div>
+            <div id="milieu">
+                <fieldset id="afficheur">
+                <p id="conteur">conteur</p>
+                </fieldset>
+                <fieldset>
+                <span>VS</span>
+            </fieldset>
+            </div>
+            <div id="lesbarresD">
+                <input type="texte" placeholder="           niveau sante" value="">
+                <input type="texte" placeholder="       niveau energie" value="">
+            </div>
+
+        </div>
+        <div id="espacecombat">
+
+
+
+
+
+            <div id="blockG">
+                <img id="combatant_G"src="img/persR/stance.gif" alt="">
+            </div>
+            <div id="blockD">
+                <img id="combatant_D"src="img/Kim_sprite.gif" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="control" class= "element">
+    <div class="gauche">
+
+        <div>
+            <input type="button"  value="avancer" id="avancerG" name="avancerG">  
+            </div>
+            <div>
+        <input type="button" value="jump" id="jumpG" name="jumpG">
+        <input type="button" value="Attaque1" id="gauche" name="gauche">
+        <input type="button" value="Attaque2" id="attaqueG2">
+        </div>
+        <div>
+                <input onclick="myreward()" type="button" value="reculer" id="reculerG" name="reculerG">  
+                
+</div>
+
+
+</div>
+<div class="droite">
+    <div>
+    <input type="button" onclick="myMove()" value="avancer" id="avancerD" name="avancerD">  
+    </div>
+    <div>
+<input type="button" value="Attaque1" id="droite" name="droite">
+<input type="button" value="Attaque2" id="attaqueD2">
+</div>
+<div>
+        <input onclick="myreward()" type="button" value="reculer" id="reculerD" name="reculerD">  
+        
+</div>
+</div>
+</div>
+    <script type="text/javascript" src="personnage.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+
+</body>
+</html>
