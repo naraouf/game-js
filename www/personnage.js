@@ -4,6 +4,8 @@ class Personnage  {
         this.force = 100;
         this.sante = 100;
     }
+    avancer(){}
+    reculer(){}
 }
 
 
