@@ -137,7 +137,7 @@ if(JSON.parse( localStorage.getItem('player02'))){
                          }
 
 
-                        
+      //-----------------------cote droit actions---------------------------                  
 
                        var action1 = document.querySelector("#droite");                     
                     //    var niveauG1 = document.querySelector("#niveauG1");
@@ -147,7 +147,7 @@ if(JSON.parse( localStorage.getItem('player02'))){
                         block_D.style.width="0px";                        
                         block_D.style.top="475px";
                        // block_D.style.backgroundColor="red";
-                        block_D.style.paddingLeft = "90px";
+                       // block_D.style.paddingLeft = "90px";
                         
                         let combatant_D = document.querySelector("#combatant_D").src="img/kim-hover.gif";
 
@@ -162,8 +162,8 @@ if(JSON.parse( localStorage.getItem('player02'))){
                             let block_D = document.querySelector("#blockD");
                             block_D.style.width="0px";
                             block_D.style.top="480px";
-                            block_D.style.paddingLeft = "200px";
-                        let combatant_D = document.querySelector("#combatant_D").src="img/Kim_sprite.gif";
+                            //block_D.style.paddingLeft = "200px";
+                        let combatant_D = document.querySelector("#combatant_D").src="img/persR/stance.gif";
                         console.log("ont ok"); }, 1000);
 
                            
@@ -189,10 +189,10 @@ if(JSON.parse( localStorage.getItem('player02'))){
                             let block_D = document.querySelector("#blockD");
                             block_D.style.width="0px";
                             block_D.style.top="480px";
-                            block_D.style.paddingLeft = "200px";
+                            //block_D.style.paddingLeft = "200px";
                             
                            // block_D.style.paddingLeft = "90px";
-                        let combatant_D = document.querySelector("#combatant_D").src="img/Kim_sprite.gif";
+                        let combatant_D = document.querySelector("#combatant_D").src="img/persR/stance.gif";
                         console.log("ont ok"); }, 1000);
                         attackD();
                            
@@ -202,89 +202,52 @@ if(JSON.parse( localStorage.getItem('player02'))){
 
 
 
-                                            if(x){
-                                               console.log("definit")
-                                            }else{
-                                            var x = 1300;  //
-                                            var z = 1315;} //
                                             
                                            
+//------------------------cote droite avancer/reculer----------------------
 
+var x = 1300;
+var z = 1315;
 
-                    var action2 = document.querySelector("#avancerD");
-                    action2.addEventListener( 'click', function() {
-                        var elem = document.getElementById("blockD");   
-                        var pos = x;  //
-                        var id = setInterval(frame, 10);
-                        function frame() {
-                          if (pos == z) {
-                           // clearInterval(id);
-                          } else {
-                            pos--; 
-                            //elem.style.top = pos + 'px'; 
-                            elem.style.left = pos+"px"; 
-                            x=pos;
-                            console.log(`avancer pos ${pos}`);
-                          }
-                        }
-                        z=z-25;
-                        let block_D = document.querySelector("#blockD");
-                        block_D.style.width="0px";
-                        block_D.style.top="475px"; 
-                        block_D.style.paddingLeft = "90px"                                    
-                          
-                        let combatant_D = document.querySelector("#combatant_D").src="img/ezgif.com-gif-maker(1).gif";
-                        console.log('ok');
-
-                        setTimeout(function(){
-                            let block_D = document.querySelector("#blockD");
-                            block_D.style.width="0px";
-                            block_D.style.top="480px";
-                            block_D.style.paddingLeft = "200px";
-
-                            
-                            
-                            
-                        let combatant_D = document.querySelector("#combatant_D").src="img/Kim_sprite.gif";
-                        console.log("ont ok"); }, 500);
-                        
-                           
-                           
-                       }              
-                    );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      var y= z
-                      function myreward() {
-                        var elem = document.getElementById("blockD");   
-                        var pos = x;  //
-                        var id = setInterval(frame, 10);
-                        function frame() {
-                          if (pos == y) {
-                           // clearInterval(id);
-                          } else {
-                            pos--; 
-                            //elem.style.top = pos + 'px'; 
-                            elem.style.marginRight = pos + 'px'; 
-                            x=pos;
-                            console.log(`retour pos ${pos}`);
-                          }
-                        }
-                        y=y-25;
-                      }
+ 
+var action3 = document.querySelector("#avancerD");
+action3.addEventListener( 'click', function() {
+    if(s < s+200){     //il s'arrete par rapport a la position de lautre joueur 
+    if(typeof encours=='undefined'){
+    //console.log('ok');
+    var elemt = document.getElementById("blockD");   
+    var pos = x;  //
+    var id = setInterval(frame, 5);// vitesse du deplacement par nombre de frame creer
+    function frame() {
+        console.log("zaim");
+      if (pos == z) {
+        clearInterval(id);
+      } else {
+        pos--; 
+        //elem.style.top = pos + 'px'; 
+        elemt.style.left = pos+"px"; 
+        x=pos;
+        //console.log(`avancer pos ${tos}`);
+      }
+    }
+    z=z-90;
+    
+    let block_G = document.querySelector("#blockD");  
+    let combatant_G = document.querySelector("#combatant_D").src="img/persR/walkf.gif";
+    //console.log('ok');
+    encours=1;
+    setTimeout(function(){
+    let block_D = document.querySelector("#blockD");        
+    encours=undefined;  
+    let combatant_D = document.querySelector("#combatant_D").src="img/persR/stance.gif";
+    //console.log("ont ok"); 
+},450);
+    
+       
+    } 
+} 
+   }             
+);
 
 
 
@@ -297,15 +260,15 @@ if(JSON.parse( localStorage.getItem('player02'))){
 
 
 
-                    //    function gameloop(){
-                    //         setTimeout(function(){
-                    //             attackG();
-                    //             gameloop();
-                    //         }, 5000);
-                            
-                    //    }
 
-                    //    gameloop();
+
+
+
+
+
+
+
+
 
                            
 //-------------------------------cote gauche----------------------------------------------------------------------
@@ -446,7 +409,7 @@ action4.addEventListener( 'click', function() {
     var tos = s;  //
     var id = setInterval(frame, 5);// vitesse du deplacement par nombre de frame creer
     function frame() {
-        console.log("zaim");
+        //console.log("zaim");
       if (tos == r) {
         clearInterval(id);
       } else {

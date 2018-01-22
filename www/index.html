@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+
+<body  >
+<div id="body1" >
+    <h1 id="premier-titre">The FigthingArts Academy</h1>
+    <button id="start-game" ><span>Start Game</span></button>
+    
+             
+    
+                
+</div>
+<div id="body2">
+
 <div id="entete" class= "element">
-<h1>Mortal Kombat</h1>
+
+<h1 >The FigthingArts Academy</h1>
 
     
 <form id="formulaire" >
@@ -29,33 +42,39 @@
                 <div class="niv_arriere">
                 <input  id="niveauG1" type="texte" value="">
                 </div>
+                <div class="niv_arriere">
                 <input id="niveauG2" type="texte"  value="">
+                </div>
             </div>
             <div id="milieu">
                 <fieldset id="afficheur">
-                <p id="conteur">conteur</p>
+                    
+                    <input type="text" id="sec" value="120" size=2></p>
+                    
                 </fieldset>
                 <fieldset>
                 <span>VS</span>
             </fieldset>
             </div>
             <div id="lesbarresD">
-                <input type="texte" placeholder="           niveau sante" value="">
-                <input type="texte" placeholder="       niveau energie" value="">
+                <div class="niv_arriere">
+                    <input  id="niveauD1" type="texte" value="">
+                    </div>
+                <div class="niv_arriere">                        
+                    <input id="niveauD2" type="texte"  value="">
+                </div>
+                <span>
+                    ken
+                </span>
             </div>
 
         </div>
         <div id="espacecombat">
-
-
-
-
-
-            <div id="blockG">
+            <div id="blockG" style="left:145px;position:absolut">
                 <img id="combatant_G"src="img/persG/stance.gif" alt="">
             </div>
-            <div id="blockD">
-                <img id="combatant_D"src="img/Kim_sprite.gif" alt="">
+            <div id="blockD"style="left:1100px;position:absolut">
+                <img id="combatant_D"src="img/persD/stance.gif" alt="">
             </div>
         </div>
 
@@ -82,7 +101,7 @@
 </div>
 <div class="droite">
     <div>
-    <input type="button" onclick="myMove()" value="avancer" id="avancerD" name="avancerD">  
+    <input type="button"  value="avancer" id="avancerD" name="avancerD">  
     </div>
     <div>
 <input type="button" value="Attaque1" id="droite" name="droite">
@@ -94,8 +113,11 @@
 </div>
 </div>
 </div>
+</div>
     <script type="text/javascript" src="personnage.js"></script>
-    <script type="text/javascript" src="game.js"></script>
-
+    <script type="text/javascript" src="controleur.js"></script>
+    <script type="text/javascript" src="view.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    
 </body>
 </html>
