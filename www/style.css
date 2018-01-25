@@ -33,10 +33,36 @@
     margin-top: 100PX;
     margin-bottom: 100PX;
     font-family: Cursive;
-    box-shadow: 1px 1px 12px yellow;
+    box-shadow: 1px 1px 30px yellow;
     width: 540px;
     color: red;
+    border-radius: 10px;
+    -webkit-animation-name: titre;
+    -webkit-animation-duration: 2.5s; 
+    -webkit-animation-iteration-count:1;
 }
+@-webkit-keyframes titre {
+    0%{   
+        box-shadow: 1px 1px 100px yellow;
+        color: rgb(255, 217, 0);
+    }
+    25%{
+        box-shadow: 1px 1px 80px yellow;
+        color: rgb(21, 255, 0);
+    }
+    50%{
+        box-shadow: 1px 1px 60px yellow;
+        color: rgb(0, 255, 242);
+    }
+    75%{
+        box-shadow: 1px 1px 40px yellow;
+        color: rgb(4, 0, 255);
+    }
+    100%{
+        box-shadow: 1px 1px 30px yellow;
+        color: red;
+    }
+    }
 
 
 #body2{
@@ -72,8 +98,43 @@ h1{
 }
 
 #formulaire{
-    margin-right: 10px;
+    margin-right: 100px;
 }
+#sub{
+    
+    
+        width: 300px;
+        height: 55PX;
+        border-radius: 100px;
+        background-color: yellow;
+        align-items: center;    
+        background-image: url("img/start.jpg");
+        -webkit-box-shadow: 0px 9px 0px #84261a;
+        -moz-box-shadow: 0px 9px 0px #84261a;
+        box-shadow: 0px 9px 0px #84261a;
+        -webkit-animation-name: clignote;
+        -webkit-animation-duration: 1s; 
+        -webkit-animation-iteration-count:infinite; 
+}
+@-webkit-keyframes clignote {
+    0%{background-image: url("img/start.jpg");
+        -webkit-box-shadow: 0px 9px 0px #84261a;
+        -moz-box-shadow: 0px 9px 0px #84261a;
+        box-shadow: 0px 9px 0px #84261a;    
+    }
+    50%{background-image: url("img/start2.jpeg");
+        -webkit-box-shadow: 0px 9px 0px #F8A402;
+        -moz-box-shadow: 0px 9px 0px #F8A402;
+        box-shadow: 0px 9px 0px #F8A402;
+    }
+    100%{background-image: url("img/start.jpg");
+        -webkit-box-shadow: 0px 9px 0px #84261a;
+        -moz-box-shadow: 0px 9px 0px #84261a;
+        box-shadow: 0px 9px 0px #84261a;
+    }
+    }
+
+
 
 
 #ring{
@@ -98,12 +159,12 @@ h1{
 .niv_arriere{
     height: 25px;
     width: 460px;
-    background-color: green;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(247, 243, 11));    
     border-radius: 10px;
 }
 
 #niveauG1{
-    background-color: red;
+    background-color: green;
     width: 100%;
     border-radius:10px;
 }
@@ -126,7 +187,7 @@ h1{
 }
 
 #niveauD1{
-    background-color: red;
+    background-color: green;
     width: 100%;
     border-radius:10px;
 }
@@ -135,9 +196,17 @@ h1{
     width: 100%;
     border-radius:10px;
 }
+.nomjoueur{
+    font-size:30px ;
+    text-shadow: 2px 2px 2px black, -2px -2px 2px white;
+}
+
 
 #afficheur{
     background-color: gray;
+}
+#sec{
+    
 }
 
 #espacecombat{
@@ -228,7 +297,7 @@ display:flex;
     box-shadow: 0px 9px 0px #84261a;
     margin-left: 12px;
     margin-right: 1px;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
     height: 10px;
     padding-bottom: 26px;
     padding-top: 2px;
@@ -241,5 +310,9 @@ display:flex;
     -moz-box-shadow: 0px 2px 0px #84261a;
     box-shadow: 0px 2px 0px #84261a;
     position:relative;
-    top:7px;
+    top:20px;
+}
+.butcentral{
+    margin-bottom: 40px;
+
 }
