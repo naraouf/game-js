@@ -156,7 +156,7 @@ h1{
     flex-direction: column;
     width: 460px;
 }
-.niv_arriere{
+.niv_arriereG{
     height: 25px;
     width: 460px;
     background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(247, 243, 11));    
@@ -179,17 +179,20 @@ h1{
     width: 460px;
     
 }
-.niv_arriere{
+.niv_arriereD{
     height: 25px;
     width: 460px;
-    background-color: green;
+    background-image: linear-gradient(to right,  rgb(247, 243, 11), rgb(255, 0, 0));    
     border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #niveauD1{
     background-color: green;
     width: 100%;
     border-radius:10px;
+    
 }
 #niveauD2{
     background-color: blue;

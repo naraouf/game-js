@@ -103,7 +103,6 @@ class View  {
              let afficheur= document.querySelector("#sec");
              afficheur.style.backgroundColor="black";
 
-
             let player = document.querySelector("#player_audio");
             player.src="audio/youwin.wav"
             player.play();
@@ -120,8 +119,7 @@ class View  {
                 reload.style.display="block";
                 // let cacher = document.querySelector(".cacher");
                 // cacher.style.display="none";
-            },1000);
-                
+            },1000);            
             
             
         }else{      
