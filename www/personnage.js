@@ -1,4 +1,4 @@
-class Personnage  {
+class Personnage {
     constructor(name, vitesse, position) {
         this.name = name;
         this.force = 100;
@@ -6,16 +6,16 @@ class Personnage  {
         this.position = position;
         this.vitesse = vitesse;
 
-        
+
     }
-    attack(target){
+    attack(target) {
         //this.force -= 5;
         target.sante -= 5;
     }
-    destabilise(){
-        
+    destabilise() {
+
     }
-     
+
 
 
 

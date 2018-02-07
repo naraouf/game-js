@@ -1,7 +1,31 @@
-
+html { /*///////////////*/
+    -ms-zoom: 0.70;
+    -moz-transform: scale(0.70);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.70);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.70);
+    -webkit-transform-origin: 0 0;
+    
+    
+}
+body{
+    
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 150% 110%; 
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    margin-left: 11px;
+    
+}
 #body1{
+     
     display: block;
     height: 900px;
+    background-size: cover;
+    width: 142%;
 }
 #start-game{
     width: 300px;
@@ -67,28 +91,17 @@
 
 #body2{
     display:none;
+    width: 143%;  /*///////////////*/
 }
 
 
-
-
-
-body{
-    width: 100%;
-    background-image: url("img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    display: flex;
-    flex-direction: column;
-    margin-right: 5px;
-}
 
 #entete{
+    height: 90px;
     background-image: url("img/header_02.png");
     background-repeat: no-repeat;
     background-size: 69% 100%; 
     position: center;
-
     display: flex;
     flex: row;
     justify-content: space-between
@@ -102,7 +115,7 @@ h1{
 }
 #sub{
     
-    
+        margin-top: 20px;
         width: 300px;
         height: 55PX;
         border-radius: 100px;
@@ -167,11 +180,14 @@ h1{
     background-color: green;
     width: 100%;
     border-radius:10px;
+    height: 25px;
+    
 }
 #niveauG2{
     background-color:blue;
     width: 100%;
     border-radius:10px;
+    height: 25px;
 }
 #lesbarresD{
     display: flex;
@@ -203,6 +219,10 @@ h1{
     font-size:30px ;
     text-shadow: 2px 2px 2px black, -2px -2px 2px white;
 }
+#bloc_nomD{
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 
 #afficheur{
@@ -213,9 +233,7 @@ h1{
 }
 
 #espacecombat{
-
     height: 90%;
-    
     
     
 }
@@ -224,7 +242,7 @@ h1{
     height: 250px;
     width: 0px;
     top: 480px;
-    left: 145px;
+    left: 350px;
     z-index: 1;    
     position: absolute;
     /* padding-left: 200px;     */
@@ -241,7 +259,7 @@ h1{
     height: 250px;
     width: 0px;
     top: 480px;
-    left: 1100px;
+    left: 1280px;
     z-index: 1;
     position: absolute;
     /* padding-left: 200px;   */
@@ -316,6 +334,6 @@ display:flex;
     top:20px;
 }
 .butcentral{
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 
 }
